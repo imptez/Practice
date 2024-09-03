@@ -13,8 +13,8 @@ public class Test112 {
 
     public static void main(String[] args) {
 
-        String s = "abc";
-        findAllCombination(s, "");
+        String s = "DELTA_20240619";
+       findAllCombination(s, "");
     }
 
     private static void findAllCombination(String s, String ans) {

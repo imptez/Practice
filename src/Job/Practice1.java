@@ -27,7 +27,9 @@ public class Practice1 {
         coins.add(new Coin(2, 1993));
         coins.add(new Coin(5, 1993));
         coins.add(new Coin(5, 1993));
-        getFrequency(coins);
+        List<Coin> collect = coins.stream().filter(coin -> coin.getValue() > 2).collect(Collectors.toList());
+        collect.forEach(System.out::println);
+
     }
 
     public static void getFrequency(List<Coin> coins) {

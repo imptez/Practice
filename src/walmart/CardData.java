@@ -3,15 +3,15 @@ package walmart;
 public class CardData  {
     private String piHash;
 
-    private String cardBrand;
+    private String nameOnTheCard;
 
     private String last4Digits;
 
     private String expiryDate;
 
-    public CardData(String piHash, String cardBrand, String last4Digits, String expiryDate) {
+    public CardData(String piHash, String nameOnTheCard, String last4Digits, String expiryDate) {
         this.piHash = piHash;
-        this.cardBrand = cardBrand;
+        this.nameOnTheCard = nameOnTheCard;
         this.last4Digits = last4Digits;
         this.expiryDate = expiryDate;
     }
@@ -20,8 +20,8 @@ public class CardData  {
         return piHash;
     }
 
-    public String getCardBrand() {
-        return cardBrand;
+    public String getNameOnTheCard() {
+        return nameOnTheCard;
     }
 
     public String getLast4Digits() {
@@ -36,7 +36,7 @@ public class CardData  {
     public String toString() {
         return "walmart.CardData{" +
                 "piHash='" + piHash + '\'' +
-                ", cardBrand='" + cardBrand + '\'' +
+                ", nameOnTheCard='" + nameOnTheCard + '\'' +
                 ", last4Digits='" + last4Digits + '\'' +
                 ", expiryDate='" + expiryDate + '\'' +
                 '}';

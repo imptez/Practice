@@ -1,6 +1,7 @@
 package Practice;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortingOfEmployee {
@@ -11,7 +12,8 @@ public class SortingOfEmployee {
         employees.stream()
                // .sorted((o1, o2) -> o1.getId() - o2.getId())
                // .sorted((o1, o2) -> o1.getName().compareTo(o2.getName()))
-                .sorted((o1, o2) -> (int) (o1.getSalary() - o2.getSalary()))
+              //  .sorted(Employee.NameCompare)
+                .sorted(Employee.SalaryComparator)
                 .forEach(System.out::println);
     }
 
@@ -28,7 +30,7 @@ public class SortingOfEmployee {
         return employees;
     }
 
-    public static class Employee {
+    public static class Employee implements Comparable<Employee>{
         private int id;
         private String name;
         private double salary;
@@ -38,6 +40,7 @@ public class SortingOfEmployee {
             this.id = id;
             this.name = name;
             this.salary = salary;
+
         }
 
         public int getId() {
@@ -64,6 +67,21 @@ public class SortingOfEmployee {
             this.salary = salary;
         }
 
+        public static Comparator<Employee> NameCompare = new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        };
+
+        public static Comparator<Employee> SalaryComparator = new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return (int) (o1.getSalary() - o2.getSalary());
+            }
+        };
+
+
         @Override
         public String toString() {
             return "Employee{" +
@@ -71,6 +89,11 @@ public class SortingOfEmployee {
                     ", name='" + name + '\'' +
                     ", salary=" + salary +
                     '}';
+        }
+
+        @Override
+        public int compareTo(Employee o) {
+            return this.id - o.getId();
         }
     }
 }

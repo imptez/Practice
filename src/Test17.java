@@ -1,12 +1,10 @@
-import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import walmart.CustomerKafkaMessage;
 
 public class Test17 {
 
@@ -65,7 +63,8 @@ public class Test17 {
         List<CustomerKafkaMessage.Card> cards= new ArrayList<>();
         inputFileRecords.forEach(inputFileRecord -> cards.add(new CustomerKafkaMessage.Card(inputFileRecord.getCardBrand(),
                 inputFileRecord.getLastDigits(),
-                inputFileRecord.getPaymentToken())));
+                inputFileRecord.getPaymentToken(),
+                inputFileRecord.getExpiryDate())));
         return cards;
     }
 }
