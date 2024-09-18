@@ -1,0 +1,11 @@
+
+B
+java:S2326" String is not used in the class.(‡ý©Ôùÿÿÿÿ8ŠÑÞ­ž2
+c	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(‡ý©Ôùÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(èÿ‘‰üÿÿÿÿ8•ÑÞ­ž2
+C
+java:S1068"(Remove this unused "data" private field.(÷’›úúÿÿÿÿ
+=
+java:S1068"(Remove this unused "size" private field.(‰öÆ)
+I
+java:S1068"3Remove this unused "initialCapacity" private field.(‘ëû´

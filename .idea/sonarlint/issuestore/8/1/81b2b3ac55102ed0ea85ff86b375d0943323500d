@@ -1,0 +1,8 @@
+
+M
+java:S25895"8Remove this expression which always evaluates to "false"(¼Ê”
+B
+java:S1481'"-Remove this unused "rootList" local variable.(°”ï_
+E	java:S106-"+Replace this use of System.out by a logger.(³šèþûÿÿÿÿ
+W
+java:S1128"ARemove this unused import 'leetcode.InvertedBinaryTree.TreeNode'.(Ú¾Ðœ

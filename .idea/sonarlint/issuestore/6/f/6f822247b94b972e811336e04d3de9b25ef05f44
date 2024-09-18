@@ -1,0 +1,10 @@
+
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(Õ–¨Âûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ

@@ -1,0 +1,8 @@
+
+H
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(µ »üÿÿÿÿ
+X
+java:S1659"BDeclare "right" and all following declarations on a separate line.(ÙØÔâ
+\
+java:S1126+"AReplace this if-then-else statement by a single return statement.(«ö„ÿÿÿÿÿ

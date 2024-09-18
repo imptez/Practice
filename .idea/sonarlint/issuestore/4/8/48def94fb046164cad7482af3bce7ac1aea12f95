@@ -1,0 +1,17 @@
+
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(Á“Ã¡
+V	java:S125	"<This block of commented-out lines of code should be removed.(ªûùï˚ˇˇˇˇ
+V	java:S125"<This block of commented-out lines of code should be removed.(‚ü´Ú˘ˇˇˇˇ
+V	java:S125 "<This block of commented-out lines of code should be removed.(Èÿª⁄˚ˇˇˇˇ
+P	java:S125""<This block of commented-out lines of code should be removed.(Î’úJ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(Óñò…¸ˇˇˇˇ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(ôòîÄ˘ˇˇˇˇ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(’Î±ƒ¯ˇˇˇˇ
+E
+java:S1128"*Remove this unused import 'java.util.Map'.(ºËΩ“˛ˇˇˇˇ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(”Û∫¥˙ˇˇˇˇ

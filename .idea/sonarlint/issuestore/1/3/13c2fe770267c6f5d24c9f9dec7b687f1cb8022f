@@ -1,0 +1,15 @@
+
+C
+java:S5411 "(Use a primitive boolean expression here.(äôÂùÿÿÿÿ
+L
+java:S1481"/Remove this unused "storeNames" local variable.(•÷º÷8ÌÍ¶ŠÛ1
+X	java:S125"<This block of commented-out lines of code should be removed.(‚ª«Ò8ÛÍ¶ŠÛ1
+G
+java:S1481",Remove this unused "collect" local variable.(Îš¼Ÿøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÉöÇ‹üÿÿÿÿ
+P
+java:S1481"5Remove this unused "storeDataDtoList" local variable.(’Üª•şÿÿÿÿ
+@	java:S106!"+Replace this use of System.out by a logger.(ùÆÊ¼
+E	java:S106#"+Replace this use of System.out by a logger.(ã´Šéıÿÿÿÿ
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8™Î¶ŠÛ1

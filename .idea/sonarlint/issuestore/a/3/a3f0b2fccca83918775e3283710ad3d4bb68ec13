@@ -1,0 +1,25 @@
+
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(üãøüÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ˆ…­Å
+Q	java:S125"<This block of commented-out lines of code should be removed.(¸ˆÆ
+V	java:S125"<This block of commented-out lines of code should be removed.(ˆÂâãøÿÿÿÿ
+?
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å
+K
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•
+M
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'java.util.TimeZone'.(à‡Õùÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'javax.xml.bind.JAXBContext'.(Ï–’ùÿÿÿÿ
+O
+java:S1128	"9Remove this unused import 'javax.xml.bind.JAXBException'.(ª¥åå
+S
+java:S1128
+"8Remove this unused import 'javax.xml.bind.Unmarshaller'.(µø–¿üÿÿÿÿ

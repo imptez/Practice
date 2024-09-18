@@ -1,0 +1,15 @@
+
+e
+java:S1192"HDefine a constant instead of duplicating this literal "Finance" 3 times.(Šó¿ü8œ‡‘€Ë1
+h
+java:S1192"FDefine a constant instead of duplicating this literal "ADMIN" 3 times.(ªš³Øúÿÿÿÿ8ž‡‘€Ë1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øàúñþÿÿÿÿ8Õ‡‘€Ë1
+]	java:S125"<This block of commented-out lines of code should be removed.(¯¶È¯ÿÿÿÿÿ8¶ˆ‘€Ë1
+L	java:S106"+Replace this use of System.out by a logger.(èëËýÿÿÿÿ8Æˆ‘€Ë1
+]	java:S125#"<This block of commented-out lines of code should be removed.(÷¦†èýÿÿÿÿ8Õˆ‘€Ë1
+c
+java:S1128"ARemove this unused import 'java.util.stream.Collectors.counting'.(ÆÇ‰²ÿÿÿÿÿ8Øˆ‘€Ë1
+e
+java:S1128"CRemove this unused import 'java.util.stream.Collectors.groupingBy'.(Ïú¯üùÿÿÿÿ8Ùˆ‘€Ë1
+L
+java:S1128	"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8Úˆ‘€Ë1

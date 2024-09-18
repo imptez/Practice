@@ -1,0 +1,13 @@
+
+?
+java:S1481")Remove this unused "nums" local variable.(¦Šéï
+F
+java:S1481"+Remove this unused "target" local variable.(Ü§Ùâÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÍË¥ê
+@	java:S106"+Replace this use of System.out by a logger.(Ğí¾Ñ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(µâƒ£ıÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(—şğÀ
+E	java:S106-"+Replace this use of System.out by a logger.(ïÃªĞÿÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ

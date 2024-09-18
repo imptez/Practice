@@ -1,0 +1,9 @@
+
+Q	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(Æ§¶Ğ
+E	java:S106"+Replace this use of System.out by a logger.(Ì‰±Œüÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ıµÌ¿úÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(ÕÕÑò
+J
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”

@@ -1,0 +1,24 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øàúñşÿÿÿÿ8Ãí€Ë1
+^
+java:S2094"BRemove this empty class, write its code or make it an "interface".(°¥38Çí€Ë1
+]	java:S125"<This block of commented-out lines of code should be removed.(õ–ôÄùÿÿÿÿ8Úí€Ë1
+^
+java:S1128"ARemove this unused import 'java.util.Comparator.comparingDouble'.(µ¥Ğ8ëí€Ë1
+l
+java:S1128"JRemove this unused import 'java.util.stream.Collectors.collectingAndThen'.(ŸÓà¤ÿÿÿÿÿ8ôí€Ë1
+e
+java:S1128"CRemove this unused import 'java.util.stream.Collectors.groupingBy'.(Ïú¯üùÿÿÿÿ8‡î€Ë1
+`
+java:S1128">Remove this unused import 'java.util.stream.Collectors.maxBy'.(©œÓ‰ûÿÿÿÿ8Šî€Ë1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Œî€Ë1
+P
+java:S1128	".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Œî€Ë1
+M
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8î€Ë1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8î€Ë1
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8šî€Ë1

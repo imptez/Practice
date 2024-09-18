@@ -1,0 +1,25 @@
+
+=
+java:S1604"(Make this anonymous inner class a lambda(£·®
+>
+java:S1604"(Make this anonymous inner class a lambda(ÿïÞß
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+E	java:S106&"+Replace this use of System.out by a logger.(˜— ¤úÿÿÿÿ
+t
+java:S2142,"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+E	java:S106)"+Replace this use of System.out by a logger.(Àô†Þþÿÿÿÿ
+@	java:S106+"+Replace this use of System.out by a logger.(€ýçË
+@	java:S106/"+Replace this use of System.out by a logger.(¸¡ÞÔ
+K
+java:S24463"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+y
+java:S2142<"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿ
+E	java:S106A"+Replace this use of System.out by a logger.(˜— ¤úÿÿÿÿ
+t
+java:S2142G"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+E	java:S106D"+Replace this use of System.out by a logger.(ù²Ïðüÿÿÿÿ
+E	java:S106F"+Replace this use of System.out by a logger.(ËõîÖûÿÿÿÿ
+E	java:S106J"+Replace this use of System.out by a logger.(ÅÿÉðÿÿÿÿÿ
+K
+java:S2446O"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ

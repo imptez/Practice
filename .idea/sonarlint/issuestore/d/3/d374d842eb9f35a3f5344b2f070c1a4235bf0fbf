@@ -1,0 +1,13 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”æ¯¢ýÿÿÿÿ8éÑê‰ö1
+n
+java:S20958"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(æù§…ýÿÿÿÿ8ïÑê‰ö1
+8
+java:S3626,"Remove this redundant jump.(ûÁÝ…8òÑê‰ö1
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÙÛ­ìûÿÿÿÿ8óÑê‰ö1
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Ú¯©¯þÿÿÿÿ8óÑê‰ö1
+U
+java:S1481"3Remove this unused "outputFilePath" local variable.(Ú¯©¯þÿÿÿÿ8óÑê‰ö1
+G	java:S106)"+Replace this use of System.out by a logger.(Ü›õÂ8÷Ñê‰ö1

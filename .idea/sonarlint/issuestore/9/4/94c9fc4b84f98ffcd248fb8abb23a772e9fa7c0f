@@ -1,0 +1,8 @@
+
+E	java:S106"+Replace this use of System.out by a logger.(±±ÚÈÿÿÿÿÿ
+:
+java:S1659"Declare "j" on a separate line.(á”æåþÿÿÿÿ
+W
+java:S1126"AReplace this if-then-else statement by a single return statement.(³ˆ´¡
+J
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ

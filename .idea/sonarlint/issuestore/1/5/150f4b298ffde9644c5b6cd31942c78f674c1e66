@@ -1,0 +1,12 @@
+
+|
+java:S13191"gThe type of "patterFreq" should be an interface such as "Map" rather than the implementation "HashMap".(¤ø¤F
+|
+java:S13191"gThe type of "sourceFreq" should be an interface such as "Map" rather than the implementation "HashMap".(¤ø¤F
+5
+java:S1659"Declare "p" on a separate line.(¬–ê¾
+E	java:S106"+Replace this use of System.out by a logger.(ìñìûùÿÿÿÿ
+J
+java:S28643"4Iterate over the "entrySet" instead of the "keySet".(ûä¥¬
+\
+java:S11268"AReplace this if-then-else statement by a single return statement.(‹ÛëËüÿÿÿÿ

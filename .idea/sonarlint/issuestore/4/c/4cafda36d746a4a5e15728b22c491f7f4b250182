@@ -1,0 +1,10 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øàúñşÿÿÿÿ8ù‰ù®2
+i
+java:S3959"GRefactor this code so that this consumed stream pipeline is not reused.(Óâé×ùÿÿÿÿ8İÏ€¯2
+J
+java:S1481
+"(Remove this unused "num" local variable.(ß´àúÿÿÿÿ8‚Šù®2
+L	java:S106"+Replace this use of System.out by a logger.(Æã•ûÿÿÿÿ8„Šù®2
+L	java:S106"+Replace this use of System.out by a logger.(Óâé×ùÿÿÿÿ8„Šù®2
+X	java:S125"<This block of commented-out lines of code should be removed.(ö¶óú8û¼…¯2

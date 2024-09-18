@@ -1,0 +1,29 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øàúñşÿÿÿÿ8áƒì´1
+W
+java:S1161	":Add the "@Override" annotation above this method signature(“–ış8öƒì´1
+H
+java:S1860
+"&Synchronize on a new "Object" instead.(‰ƒ“úüÿÿÿÿ8öƒì´1
+G	java:S106"+Replace this use of System.out by a logger.(‰ˆƒÃ8÷ƒì´1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8÷ƒì´1
+`
+java:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶8øƒì´1
+E	java:S108")Either remove or fill this block of code.(ä ¹€8øƒì´1
+H
+java:S1860"&Synchronize on a new "Object" instead.(šˆİäüÿÿÿÿ8øƒì´1
+L	java:S106"+Replace this use of System.out by a logger.(†‹— øÿÿÿÿ8ùƒì´1
+W
+java:S1161":Add the "@Override" annotation above this method signature(“–ış8ÍÖì´1
+H
+java:S1860"&Synchronize on a new "Object" instead.(šˆİäüÿÿÿÿ8ÏÖì´1
+L	java:S106"+Replace this use of System.out by a logger.(À¿è¼ùÿÿÿÿ8ÎÖì´1
+{
+java:S2142 "^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ÏÖì´1
+`
+java:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶8ÏÖì´1
+E	java:S108 ")Either remove or fill this block of code.(ä ¹€8ÏÖì´1
+H
+java:S1860#"&Synchronize on a new "Object" instead.(‰ƒ“úüÿÿÿÿ8Ö¹ì´1
+L	java:S106$"+Replace this use of System.out by a logger.(²µ¼şüÿÿÿÿ8ĞÖì´1
