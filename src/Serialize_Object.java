@@ -44,7 +44,7 @@ class Demo_Serialize implements Serializable {
 
     int i = Integer.MAX_VALUE;
     String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    Double d = new Double(-1.0);
+    Double d =-1.0;
 
     @Override
     public String toString() {

@@ -1,6 +1,8 @@
 package Job;
 
-public class MatchingPair {
+public class
+
+MatchingPair {
 
     public static int countMatchingPairs(String[] words) {
         int count = 0;

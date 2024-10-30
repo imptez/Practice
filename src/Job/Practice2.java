@@ -22,8 +22,8 @@ public class Practice2 {
 }
 
 public static void getFrequency(List<Person> persons){
-//    Map<Department, Long> map = persons.stream()
-//            .collect(groupingBy(Person::getDepartment, counting()));
+    Map<Department, Long> map = persons.stream()
+            .collect(groupingBy(Person::getDepartment, counting()));
 
     persons.stream()
                     .forEach(person -> {

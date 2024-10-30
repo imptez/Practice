@@ -1,4 +1,4 @@
-package Practice;
+package Job;
 
 import java.util.stream.*;
 import java.util.*;

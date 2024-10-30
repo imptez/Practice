@@ -1,4 +1,4 @@
-package Practice;
+package Job;
 
 public class StringPalindrome {
     public static void main(String[] args) {

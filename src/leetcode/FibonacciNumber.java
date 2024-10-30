@@ -3,7 +3,7 @@ package leetcode;
 public class FibonacciNumber {
 
   public static void main(String[] args) {
-    System.out.println(fib(4));
+    System.out.println(fib(6));
   }
 
   public static int fib(int n) {
@@ -15,9 +15,9 @@ public class FibonacciNumber {
     int i = 0;
     int j = 1;
     for (int m = 1; m < n; m++) {
-      int sum = i + j;//0+0+1
-      i = j;//1
-      j = sum;//1
+      int sum = i + j;//1,2,3,5,8
+      i = j;//1,1,2,3,5
+      j = sum;//1,2,3,5,8
 
     }
     return j;

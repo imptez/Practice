@@ -1,15 +1,6 @@
 package Job;
 
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-@EqualsAndHashCode
-@Getter
-@Setter
-@ToString
 public class Person {
     int id;
     String name;
@@ -21,5 +12,31 @@ public class Person {
         this.name=name;
         this.salary=salary;
         this.department=department;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", department=" + department +
+                '}';
     }
 }

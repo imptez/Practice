@@ -1,4 +1,4 @@
-package SampleTest;
+package Job;
 
 public class Palindrum {
 
