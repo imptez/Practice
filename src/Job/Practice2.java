@@ -24,15 +24,7 @@ public class Practice2 {
 public static void getFrequency(List<Person> persons){
     Map<Department, Long> map = persons.stream()
             .collect(groupingBy(Person::getDepartment, counting()));
-
-    persons.stream()
-                    .forEach(person -> {
-                        persons.add(new Person(7, "Imptez", 900d, new Department(3, "ADMIN")));
-                        System.out.println(person.toString());
-                    });
-
-
-   // System.out.println(map);
+    map.forEach((a,c)-> System.out.println("Department : "+a.getName()+" number of people "+c));
 }
 
 

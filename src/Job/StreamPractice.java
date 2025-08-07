@@ -1,9 +1,20 @@
 package Job;
 
 import java.util.*;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StreamPractice {
+
+    static List<Person> persons = Arrays.asList(
+            new Person(1, "Alex", 100d, new Department(1, "HR")),
+            new Person(2, "Brian", 200d, new Department(1, "HR")),
+            new Person(3, "Charles", 900d, new Department(2, "Finance")),
+            new Person(4, "David", 200d, new Department(2, "Finance")),
+            new Person(5, "Edward", 200d, new Department(2, "Finance")),
+            new Person(6, "Frank", 800d, new Department(3, "ADMIN")),
+            new Person(7, "George", 900d, new Department(3, "ADMIN")));
 
     public static void filter() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
@@ -95,19 +106,16 @@ public class StreamPractice {
     }
 
     public static void groupingBy() {
-        List<Person> persons = Arrays.asList(
-                new Person(1, "Alex", 100d, new Department(1, "HR")),
-                new Person(2, "Brian", 200d, new Department(1, "HR")),
-                new Person(3, "Charles", 900d, new Department(2, "Finance")),
-                new Person(4, "David", 200d, new Department(2, "Finance")),
-                new Person(5, "Edward", 200d, new Department(2, "Finance")),
-                new Person(6, "Frank", 800d, new Department(3, "ADMIN")),
-                new Person(7, "George", 900d, new Department(3, "ADMIN")));
         System.out.println("From Method groupingBy()");
         Map<Department, List<Person>> collect = persons.stream()
                 .collect(Collectors.groupingBy(Person::getDepartment));
 
         collect.forEach((department, people) -> System.out.println("Department is = " + department.getName() + ", People's are = " + people));
+        System.out.println("People with Highest Salary in there Department");
+        persons.stream()
+                .collect(Collectors.toMap(Person::getDepartment, Function.identity(), BinaryOperator.maxBy(Comparator.comparingDouble(Person::getSalary))))
+                .forEach((department, person) -> System.out.println("Department is = " + department.getName() + ", People's are = " + person));
+
     }
 
     public static void peakElements() {
@@ -127,12 +135,21 @@ public class StreamPractice {
                 .forEach(System.out::println);
     }
 
-    public static void thirdHighestElement() {
+   /* public static void thirdHighestElement() {
         List<Integer> numbers = Arrays.asList(1, 8, 7, 4, 3, 6, 7, 8, 6, 4, 4, 3, 2, 1);
         System.out.println("From Method thirdHighestElement()");
         numbers.stream()
                 .distinct()
                 .sorted(Comparator.reverseOrder())
+                .skip(18)
+                .findFirst().ifPresent(System.out::println);
+    }*/
+
+    public static void thirdHighestElement() {
+        System.out.println("From Method thirdHighestSalary()");
+        persons.stream()
+                .distinct()
+                .sorted(Comparator.comparingDouble(Person::getSalary).reversed())
                 .skip(2)
                 .findFirst().ifPresent(System.out::println);
     }
@@ -140,20 +157,30 @@ public class StreamPractice {
     public static void convertToSet() {
         List<Integer> numbers = Arrays.asList(1, 8, 7, 4, 3, 6, 7, 8, 6, 4, 4, 3, 2, 1);
         System.out.println("From Method convertToSet()");
-        numbers.stream()
-                .collect(Collectors.toSet()).forEach(System.out::println);
+        new HashSet<>(numbers).forEach(System.out::print);
+        System.out.println();
     }
 
-    public static void summarizingStatistics() {
+    /*public static void summarizingStatistics() {
         List<Integer> numbers = Arrays.asList(1, 8, 7, 4, 3, 6, 7, 8, 6, 4, 4, 3, 2, 1);
         System.out.println("From Method summarizingStatistics()");
         IntSummaryStatistics intSummaryStatistics = numbers.stream()
                 .mapToInt(Integer::intValue)
                 .summaryStatistics();
         System.out.println(intSummaryStatistics);
+    }*/
+
+    public static void summarizingStatistics() {
+        List<Integer> numbers = Arrays.asList(1, 8, 7, 4, 3, 6, 7, 8, 6, 4, 4, 3, 2, 1);
+        System.out.println("From Method summarizingStatistics()");
+        DoubleSummaryStatistics doubleSummaryStatistics = persons.stream()
+                .mapToDouble(Person::getSalary)
+                .summaryStatistics();
+        System.out.println(doubleSummaryStatistics);
     }
 
     public static void main(String[] args) {
+
         filter();
         maxValue();
         sumValue();

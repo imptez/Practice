@@ -3,6 +3,7 @@ package Job;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MoastAskedQuestions {
 
@@ -50,7 +51,9 @@ public class MoastAskedQuestions {
      *
      */
 
-    public static boolean isPrime(int num) {
+    public static boolean
+
+    isPrime(int num) {
         if (num <= 1) return false;
         if (num <= 3) return true;
         if (num % 2 == 0 || num % 3 == 0) return false;
@@ -109,11 +112,11 @@ public class MoastAskedQuestions {
     }
     public static void main(String[] args) {
         System.out.println("Calling method reverseString(\"DOG\")");
-        System.out.println(reverseString("DOG"));
+        System.out.println(getReverseString("DOG"));
         System.out.println("Calling method swapVariable()");
         swapVariable();
         System.out.println("Calling method countWords()");
-        countWords("Ramu has a black dog black dog ramu");
+        getCountOfWords(" Ramu has a black dog black dog ramu ");
         System.out.println("Calling method isPrime()");
         System.out.println("The number 29 isPrime "+isPrime(29));
         System.out.println("Calling method isPallindrome()");
@@ -121,8 +124,34 @@ public class MoastAskedQuestions {
         System.out.println("Calling method getFibonacci()");
         System.out.println(getFibonacci(6));
         System.out.println("Calling method getDuplicateCharacter()");
+        String str="bhaabccdeefh";
+        duplicateCharacter(str);
         getDuplicateCharacter();
 
+    }
+
+    public static void duplicateCharacter(String str){
+        str.chars().mapToObj(value -> (char) value)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet().stream()
+                .filter(value -> value.getValue() > 1)
+                .map(Map.Entry::getKey)
+                .forEach(System.out::println);
+    }
+
+    public static void getCountOfWords(String str){
+        System.out.println("String is ..."+str);
+        String[] split = str.split("\\s");
+        System.out.println(Arrays.stream(split)
+                .filter(s -> !s.isEmpty())
+                .count());
+    }
+
+    public static String getReverseString(String str){
+        if(str.isEmpty()){
+            return str;
+        }
+        return getReverseString(str.substring(1)) + str.charAt(0);
     }
 
 

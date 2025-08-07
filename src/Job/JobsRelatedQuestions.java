@@ -25,10 +25,24 @@ public class JobsRelatedQuestions {
         System.out.println("Print Method allPossibleCombinationOfString()");
         String rem = "abc";
         Set<String> combination = new HashSet<>();
+
         generateAllPossibleCombination("", rem, combination);
+        combination.forEach(System.out::println);
     }
 
     private static void generateAllPossibleCombination(String prefix, String rem, Set<String> combination) {
+        if(rem.isEmpty()){
+            combination.add(prefix);
+        }
+        for(int i=0;i<rem.length();i++){
+            String newprefix=prefix+rem.charAt(i);
+            String newRemaining= rem.substring(0,i)+rem.substring(i+1);
+            generateAllPossibleCombination(newprefix,newRemaining,combination);
+        }
+
+    }
+
+   /* private static void generateAllPossibleCombination(String prefix, String rem, Set<String> combination) {
 
         if (rem.isEmpty()) {
             System.out.println(prefix);
@@ -37,7 +51,7 @@ public class JobsRelatedQuestions {
         for (int i = 0; i < rem.length(); i++) {
             generateAllPossibleCombination(prefix + rem.charAt(i), rem.substring(0, i) + rem.substring(i + 1), combination);
         }
-    }
+    }*/
 
     private static void countMatchingPair() {
         System.out.println("Print Method countMatchingPair()");

@@ -20,6 +20,15 @@
         <jarDirectory url="file://$USER_HOME$/Downloads/Java_Jar" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/annotations-24.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="f3c8be2c-4af3-45ac-bc18-b9a9ca13499a" />

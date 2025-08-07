@@ -22,4 +22,5 @@ public class Store {
         iphoneStockObservable.setStockCount(10);
         iphoneStockObservable.setStockCount(100);
     }
+
 }

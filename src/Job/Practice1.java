@@ -27,14 +27,14 @@ public class Practice1 {
         coins.add(new Coin(2, 1993));
         coins.add(new Coin(5, 1993));
         coins.add(new Coin(5, 1993));
-        List<Coin> collect = coins.stream().filter(coin -> coin.getValue() > 2).collect(Collectors.toList());
-        collect.forEach(System.out::println);
+       getFrequency(coins);
 
     }
 
     public static void getFrequency(List<Coin> coins) {
-        Map<Coin, Long> map = coins.stream()
-                .collect(groupingBy(coin -> coin, counting()));
+       coins.stream()
+                .collect(groupingBy(coin -> coin, counting()))
+               .forEach((coin, aLong) -> System.out.println("The coin value is "+coin.getValue()+" year is "+coin.getYear()+" count is "+aLong));
         Stream<List<Coin>> listStream = partitionList(coins, 2);
         listStream.forEach(System.out::println);
        // map.forEach((coin, aLong) -> System.out.println("The key is ["+coin+"] the count is "+aLong));
@@ -56,16 +56,4 @@ public class Practice1 {
                 });
     }
 
-   /* public static void getFrequency(List<Coin> coins){
-        List<Map<Integer,Integer>> freqList = new ArrayList<>();
-        for(Coin coin :coins){
-            int value = coin.getValue();
-            if(freqList.size()-1 >= value){
-                Map<Integer, Integer> integerIntegerMap = freqList.get(value);
-                if(integerIntegerMap.containsKey(coin.getYear())){
-                    integerIntegerMap.put(coin.getYear(),integerIntegerMap.get(coin.getYear())+1);
-                }
-            }
-        }
-    }*/
 }

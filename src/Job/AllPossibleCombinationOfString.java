@@ -5,16 +5,18 @@ import java.util.HashSet;
 public class AllPossibleCombinationOfString {
 
     public static void main(String[] args) {
-        String rem="abc";
-        printAllCombination("abc", "");
+        String rem="ABC";
+       // printAllCombination("abc", "");
         HashSet<String> combination = new HashSet<>();
-        //printAllCombination2("", rem,combination);
+        //printAllCombination2("",rem,combination);
+        generatePermutations("", rem,combination);
+        combination.forEach(System.out::println);
         System.out.println(combination.size());
     }
 
     private static void printAllCombination2(String prefix, String rem, HashSet<String> combination) {
         if(!prefix.isEmpty()){
-            System.out.println(prefix);
+            System.out.println("The prefix is "+prefix);
             combination.add(prefix);
         }
         for(int i=0;i<rem.length();i++){
@@ -39,7 +41,6 @@ public class AllPossibleCombinationOfString {
 
     private static void generatePermutations(String prefix, String remaining, HashSet<String> permutations) {
         if (remaining.length() == 0) {
-            System.out.println(prefix);
             permutations.add(prefix);
         } else {
             for (int i = 0; i < remaining.length(); i++) {

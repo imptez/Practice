@@ -1,6 +1,7 @@
 package Job;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -9,12 +10,30 @@ public class SortingOfEmployee {
     public static void main(String[] args) {
 
         List<Employee> employees = getEmployees();
+        System.out.println("Printing the nth Highest salary of the Employee");
+        getNthSalariedEmployees(employees,1).forEach(System.out::println);
+        System.out.println("End Printing...........");
         employees.stream()
+                //.sorted(Comparator.reverseOrder())
                // .sorted((o1, o2) -> o1.getId() - o2.getId())
                // .sorted((o1, o2) -> o1.getName().compareTo(o2.getName()))
-              //  .sorted(Employee.NameCompare)
-                .sorted(Employee.SalaryComparator)
+               .sorted(Employee.NameCompare)
+               // .sorted(Employee.SalaryComparator)
                 .forEach(System.out::println);
+    }
+
+    public static List<Employee> getNthSalariedEmployees(List<Employee> employees,int n){
+        List<Employee> sortedEmployeeList = employees.stream()
+                .sorted(Comparator.reverseOrder())
+                .toList();
+        if(sortedEmployeeList.size()<n){
+            return Collections.emptyList();
+        }
+        double employeeSalary = sortedEmployeeList.get(n - 1).getSalary();
+        return employees.stream()
+                .filter(employee -> employee.getSalary()==employeeSalary)
+                .toList();
+
     }
 
     private static List<Employee>  getEmployees() {
@@ -93,7 +112,7 @@ public class SortingOfEmployee {
 
         @Override
         public int compareTo(Employee o) {
-            return this.id - o.getId();
+            return (int) (this.salary-o.getSalary());
         }
     }
 }

@@ -21,6 +21,12 @@ public class CharacterFrequencyCalculator {
         String newStr = aString.replaceAll("\\s", "");
         System.out.println(frequencyMap(newStr.chars().mapToObj(c -> (char) c)));
         System.out.println("The Input String is "+aString);
+        Map<Character, Long> collect = newStr.chars().mapToObj(value -> (char) value)
+                .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+                .entrySet().stream()
+                .filter(value -> value.getValue() > 1)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        collect.forEach((s,c)-> System.out.println("the character is "+s+" frequency is "+c) );
         findDuplicateCharacter(newStr);
     }
 

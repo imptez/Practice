@@ -13,8 +13,16 @@ public class Test112 {
 
     public static void main(String[] args) {
 
-        String s = "DELTA_20240619";
-       findAllCombination(s, "");
+        String s = "";
+        String a = "Tata";
+
+        String b = a;
+
+        a = "Birla";
+        System.out.println(a);
+        System.out.println(b);
+
+       //findAllCombination(s, "");
     }
 
     private static void findAllCombination(String s, String ans) {

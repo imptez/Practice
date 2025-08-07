@@ -35,7 +35,9 @@ public class SortStringInCamelCase {
         char[] sortedStr = new char[n];
         for (int i = 0; i < n; i++) {
             if (Character.isLowerCase(str.charAt(i))) {
-                sortedStr[i] = lower.poll();
+                Character poll = lower.poll();
+                System.out.println(poll);
+                sortedStr[i] = poll;
             } else {
                 sortedStr[i] = upper.poll();
             }
@@ -45,44 +47,9 @@ public class SortStringInCamelCase {
         return new String(sortedStr);
     }
 
-    public static String getSortedString2(String str, int n) {
-        // Create two priority queues to store lowercase and
-        // uppercase characters separately
-        PriorityQueue<Character> lower
-                = new PriorityQueue<>();
-        PriorityQueue<Character> upper
-                = new PriorityQueue<>();
-
-        // Loop through the string and insert each character
-        // into the appropriate queue
-        str.chars()
-                .forEach(value -> {
-                    if (Character.isLowerCase((char) value)) {
-                        lower.add((char) value);
-                    } else {
-                        upper.add((char) value);
-                    }
-                });
-
-        // Loop through the string again and replace each
-        // character with the next lowest or highest
-        // character in the appropriate queue
-        char[] sortedStr = new char[n];
-        for (int i = 0; i < n; i++) {
-            if (Character.isLowerCase(str.charAt(i))) {
-                sortedStr[i] = lower.poll();
-            } else {
-                sortedStr[i] = upper.poll();
-            }
-        }
-
-        // Return the sorted string
-        return new String(sortedStr);
-    }
-
-    // Driver code
+      // Driver code
     public static void main(String[] args) {
-        String s = "gEeksfOrgEEkS";
+        String s = "gEeksfOraEEkS";
         int n = s.length();
         System.out.println(getSortedString(s, n));
     }

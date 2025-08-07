@@ -9,35 +9,8 @@ public class TextEditorPractice {
     Stack<String> history;
 
     public TextEditorPractice() {
-        this.history = new Stack<>();
         this.text = new StringBuilder();
-    }
-
-    public void addText(String txt){
-      this.history.push(this.text.toString());
-      this.text.append(txt);
-    }
-
-    public void deleteText(int length){
-        if(length <= text.length()){
-            this.history.push(this.text.toString());
-            this.text.delete(text.length()-length,text.length());
-        }else{
-            this.history.push(this.text.toString());
-            this.text= new StringBuilder();
-        }
-    }
-
-    public void undo(){
-        if(!history.empty()){
-            text=new StringBuilder(history.pop());
-        }else{
-            System.out.println("nothing to undo");
-        }
-    }
-
-    public void printText(){
-        System.out.println("Current Text: " + text.toString());
+        this.history = new Stack<>();
     }
 
     public static void main(String[] args) {
@@ -89,5 +62,34 @@ public class TextEditorPractice {
         }
 
         scanner.close();
+    }
+
+    private void printText() {
+        System.out.println(text.toString());
+    }
+
+    private void undo() {
+        if(!history.empty()) {
+            this.text = new StringBuilder(history.pop());
+        }else{
+            System.out.println("Nothing to Undo");
+        }
+    }
+
+    private void deleteText(int length) {
+        if (length <= this.text.length()) {
+            history.push(text.toString());
+            text.delete(text.length() - length, text.length());
+        } else {
+            System.out.println("length is greater tha text deleting everything");
+            history.push(text.toString());
+            text = new StringBuilder();
+        }
+
+    }
+
+    private void addText(String newText) {
+        this.history.push(newText);
+        this.text.append(newText);
     }
 }

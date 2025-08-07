@@ -17,6 +17,10 @@ public class EmployeeDaoImpl implements EmployeeDao{
 
     @Override
     public Employee get(String client, int empId) throws Exception {
-        return new Employee("Imptez","ADMIN",123);
+        return new Employee.Builder()
+                .setEmpName("Imptez")
+                .setDepartment("A")
+                .setSalary(20000.00)
+                .build();
     }
 }
