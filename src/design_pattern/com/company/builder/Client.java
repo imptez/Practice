@@ -12,7 +12,9 @@ public class Client {
 		UserDTO dto = directBuild(builder, user);
 		System.out.println(dto);
 	}
-	
+
+
+
 	/**
 	 * This method serves the role of director in builder pattern. 
 	 */

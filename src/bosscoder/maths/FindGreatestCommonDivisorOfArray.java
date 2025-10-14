@@ -16,6 +16,7 @@ public class FindGreatestCommonDivisorOfArray {
             max = Math.max(max, num);
         }
 
+        //HCF LOGIC
         while (min != 0) {
             int temp = min;//4,2
             min = max % min;//10%4=2,4%2
