@@ -7,10 +7,10 @@ import java.util.concurrent.*;
 
 public class ExecutorExample {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //executorServiceOnly();
+        executorServiceOnly();
         //  executorServiceWithFurure();
-        // executorServiceWithInvokeAll();
-        executorServiceWithInvokeAny();
+        //executorServiceWithInvokeAll();
+       // executorServiceWithInvokeAny();
     }
 
     private static void executorServiceWithInvokeAny() throws ExecutionException, InterruptedException {
@@ -52,16 +52,22 @@ public class ExecutorExample {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
 
         for (int i = 0; i < 10; i++) {
-            executorService.submit(new Task());
+            executorService.submit(new Task(i));
         }
 
         executorService.shutdown();
     }
 
     private static class Task implements Runnable {
+        private final int number;
+
+        public Task(int number) {
+            this.number = number;
+        }
+
         @Override
         public void run() {
-            System.out.println(Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getName() + " → Task number: " + number);
         }
     }
 }

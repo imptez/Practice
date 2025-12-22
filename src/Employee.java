@@ -1,14 +1,32 @@
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import java.util.Date;
-
-@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class Employee {
-    private int id;
     private String name;
-    //private List<String> skills;
-    @JsonDeserialize(using = DateHandler.class)
-    private Date joining;
+    private double salary;
+    private String department;
 
+    public Employee(String name, double salary, String department) {
+        this.name = name;
+        this.salary = salary;
+        this.department = department;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", department='" + department + '\'' +
+                '}';
+    }
 }
