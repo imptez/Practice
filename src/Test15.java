@@ -1,4 +1,3 @@
-import java.text.ParseException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -44,12 +43,12 @@ public class Test15 {
 
     static void printEmployeeWithHighestSalaryWithEachDepartment(List<Employee> empList){
         Set<Double> set=new HashSet<>();
-        empList.stream().collect(Collectors.groupingBy(Employee::getDepartment))
+        empList.stream().collect(Collectors.groupingBy(Employee::department))
                 .forEach((s, employees) ->{
             System.out.println("The Department is "+s);
                     System.out.println("=====================================================");
                     List<Double> uniqueSalaries = employees.stream()
-                            .map(Employee::getSalary)
+                            .map(Employee::salary)
                             .distinct()
                             .sorted(Comparator.reverseOrder())
                             .toList();
@@ -61,7 +60,7 @@ public class Test15 {
                         thirdHighestSalary = uniqueSalaries.get(uniqueSalaries.size() - 1); // last one
                     }
                     employees.stream()
-                            .filter(employee -> employee.getSalary()>=thirdHighestSalary)
+                            .filter(employee -> employee.salary()>=thirdHighestSalary)
                             .forEach(System.out::println);
                     System.out.println("=====================================================");
 
