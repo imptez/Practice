@@ -1,15 +1,12 @@
 package bosscoder.stack;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public interface LongestValidParentheses {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
        String s = "(()";
-       List<String> list=new ArrayList<>();
-        System.out.println(getValidParentheses(s));
+        System.out.println(longestValidBracket(s));
     }
 
     static int getValidParentheses(String str){
@@ -31,5 +28,25 @@ public interface LongestValidParentheses {
             st.push(ch);
         }
         return counter;
+    }
+
+    static int longestValidBracket(String str){
+        Stack<Character> st= new Stack<>();
+        int c=0;
+        for(int i=0;i<str.length();i++){
+            Character ch=str.charAt(i);
+            boolean isValid=false;
+            if(ch==')') {
+                while (!st.isEmpty() && st.peek() == '(') {
+                    st.pop();
+                    isValid = true;
+                }
+            }
+                if(isValid){
+                    c+=2;
+                }
+            st.push(ch);
+        }
+        return c;
     }
 }
